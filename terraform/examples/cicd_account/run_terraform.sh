@@ -43,5 +43,6 @@ if [[  $retcode != 0 ]]; then
 fi
 
  
-terraform apply -auto-approve plan.out
-  
+
+terraform apply plan.out -auto-approve
+ 
