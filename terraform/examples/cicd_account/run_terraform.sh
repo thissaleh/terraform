@@ -43,8 +43,5 @@ if [[  $retcode != 0 ]]; then
 fi
 
  
-    terraform apply plan.out -auto-approve
-else
-    echo "Exiting..."
-    exit 0
-fi
+terraform apply "plan.out" -auto-approve
+ 
