@@ -2,8 +2,8 @@
 
 DELETE_ALL=${1}
 
-export AWS_ACCESS_KEY_ID="AKIA4FE67FS6UOWW5AUR"
-export AWS_SECRET_ACCESS_KEY="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"
+export AWS_ACCESS_KEY_ID="AKIA4FE67FS6S2QES4GM"
+export AWS_SECRET_ACCESS_KEY="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"
 
 if ( [[ -z ${AWS_ACCESS_KEY_ID} ]] || [[ -z ${AWS_SECRET_ACCESS_KEY} ]] ) && [[ -z ${AWS_PROFILE} ]]; then
     echo "[ERROR] Missing AWS credentials variables"
