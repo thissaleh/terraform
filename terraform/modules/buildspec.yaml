@@ -4,14 +4,14 @@ env:
   variables:
     ENVIRONMENT: int
     TF_IN_AUTOMATION: 1
-    TERRAFORM_VERSION: 0.13.4
+    TERRAFORM_VERSION: 1.0.2
     BASE_PATH: terraform/modules
     #TEST_ACCOUNT_ASSUMED_ROLE: "" In case of cross deployment this is the role in the target account.
 
 phases:
   install:
     runtime-versions:
-      golang: 1.14
+      golang: 1.16
       python: 3.8
     commands:
       - ./${BASE_PATH}/install.sh
