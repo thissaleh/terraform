@@ -42,10 +42,8 @@ if [[  $retcode != 0 ]]; then
     exit $retcode
 fi
 
-read -p "Do you want to apply? Yes/No: " answer
-
-if [[ $answer == "Yes" ]]; then
-    terraform apply -var-file ${TFVARS_FILE} -auto-approve
+ 
+    terraform apply plan.out -auto-approve
 else
     echo "Exiting..."
     exit 0
