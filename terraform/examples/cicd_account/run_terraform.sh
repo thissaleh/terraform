@@ -44,5 +44,5 @@ fi
 
  
 
-terraform apply plan.out -auto-approve
+terraform apply plan.out  
  
