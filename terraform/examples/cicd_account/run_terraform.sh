@@ -45,7 +45,7 @@ fi
 read -p "Do you want to apply? Yes/No: " answer
 
 if [[ $answer == "Yes" ]]; then
-    terraform apply plan.out
+    terraform apply -var-file ${TFVARS_FILE}  
 else
     echo "Exiting..."
     exit 0
