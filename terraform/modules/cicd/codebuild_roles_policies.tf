@@ -1,7 +1,7 @@
 resource "aws_iam_role" "codebuild_role" {
   name = "${var.git_repository_name}_codebuild_deploy_role"
 
-  assume_role_policy = <<EOF
+ /* assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -14,7 +14,8 @@ resource "aws_iam_role" "codebuild_role" {
     }
   ]
 }
-EOF
+EOF */
+
 }
 
 resource "aws_iam_role_policy" "codebuild_policy" {
