@@ -1,4 +1,4 @@
-resource "aws_iam_role" "codepipeline_role" {
+/*resource "aws_iam_role" "codepipeline_role" {
   name = local.codepipeline_role_name
 
   assume_role_policy = <<EOF
@@ -31,4 +31,4 @@ resource "aws_iam_role_policy" "codepipeline_policy" {
 resource "aws_iam_role_policy_attachment" "codepipeline_codecommit" {
   role       = aws_iam_role.codepipeline_role.name
   policy_arn = "arn:aws:iam::aws:policy/AWSCodeCommitFullAccess"
-}
+}*/
