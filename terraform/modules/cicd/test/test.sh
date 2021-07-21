@@ -16,6 +16,6 @@ go test ${BASE_PATH}/cicd/test/cicd_test.go -timeout 10m -v | tee ${BASE_PATH}/c
 retcode=${PIPESTATUS[0]}
 
 echo "Creating Logs"
-terratest_log_parser -testlog ${BASE_PATH}/cicd/test/reports/test_output.log -outputdir ${BASE_PATH}/cicd/test/reports
+terratest_log_parser -testlog ${BASE_PATH}/cicd/test/test_output.log -outputdir ${BASE_PATH}/cicd/test/
 
 exit ${retcode}
